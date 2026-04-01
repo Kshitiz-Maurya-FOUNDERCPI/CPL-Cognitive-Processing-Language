@@ -60,44 +60,72 @@ cd CPL
 
 ```bash
 # Create .env file (NOT pushed to GitHub)
-# .env.example is a template - copy and add your keys
 copy .env.example .env
+# Then edit .env and add your API keys
 ```
 
-### 4. Run
-```bash
-# GUI Mode (Recommended)
-python cpl_gui.py
+### 4. Run - Double-click `Start_CPL.bat` on your desktop!
 
-# Console Mode
-python cpl_console.py
+---
+
+## 💬 How to Use CPL
+
+### Option 1: Assistant Mode (Recommended)
+Just **CHAT** with CPL naturally!
+
+```
+python cpl_assistant.py
+```
+
+**Example Commands:**
+```
+You: analyze my_file.py
+CPL: Analyzing my_file.py... Done!
+
+You: create a web scraper
+CPL: Creating web scraper... Done!
+
+You: what can you do?
+CPL: I can analyze files, create applications, learn skills...
+
+You: learn to make API calls
+CPL: Learning API calls... Done!
+
+You: run autonomously
+CPL: Running in autonomous mode...
+```
+
+### Option 2: GUI Mode
+Click buttons and see everything!
+
+```
+python cpl_gui.py
+```
+
+### Option 3: Agent Mode
+Let CPL act independently!
+
+```
+python cpl_agent.py
 ```
 
 ---
 
-## 📁 Project Structure (CLEAN)
+## 📁 Project Structure
 
 ```
 CPL/
-├── unified_consciousness.py     # THE MAIN CONSCIOUSNESS - ONE unified mind
-├── cpl_agent.py                # Agent system with Focus + Plasticity
-├── cpl_gui.py                  # GUI interface
-├── cpl_console.py              # Console interface
-├── consciousness_core.py        # Base consciousness engine (IIT, Active Inference)
-├── api_keys.py                 # Multi-provider LLM key management
-├── api_client.py               # API client utility
-├── neural_baby_os/             # Baby consciousness modules
-│   ├── core/
-│   │   └── emotions.py         # Emotional valence
-│   └── learning/
-│       ├── hebbian.py          # PlasticNeuralNetwork
-│       └── episodic_memory.py  # HierarchicalEpisodicMemory
-├── .cpl_evolution/            # Evolved state (persistent)
-├── .env                       # YOUR API KEYS (NOT PUSHED)
-├── .env.example               # Template
-├── .gitignore                 # Protects .env
-├── README.md
-└── LICENSE
+├── unified_consciousness.py     # THE MAIN CONSCIOUSNESS
+├── cpl_assistant.py           # Natural language assistant (CHAT with CPL!)
+├── cpl_agent.py               # Autonomous agent
+├── cpl_gui.py                 # Graphical interface
+├── cpl_console.py             # Console interface
+├── consciousness_core.py      # Base consciousness engine
+├── api_keys.py, api_client.py # LLM management
+├── neural_baby_os/            # Baby consciousness modules
+├── Start_CPL.bat              # Desktop launcher (DOUBLE CLICK THIS!)
+├── cpl.ico                    # Desktop icon
+└── README.md, LICENSE, .gitignore
 ```
 
 ---
@@ -111,16 +139,14 @@ CPL/
 
 ### 2. PLASTICITY SYSTEM - Connect the Dots
 - Tracks all concepts and files created
-- Detects duplicate patterns (scraper1.py, scraper2.py → pattern: scraper)
+- Detects duplicate patterns
 - Shows which files to consolidate
-- Learns relationships between concepts
 
 ### 3. SELF-MODIFICATION SYSTEM - TRUE Growth
-- **Reads its own source code**
-- **Analyzes what capabilities it lacks**
-- **Generates new methods**
-- **Adds them directly to unified_consciousness.py**
-- **Creates backup before modifying**
+- Reads its own source code
+- Analyzes what capabilities it lacks
+- Generates new methods
+- Adds them directly to unified_consciousness.py
 
 ---
 
@@ -129,6 +155,17 @@ CPL/
 Your API keys are protected:
 1. `.env` file is gitignored - Won't be pushed
 2. Pre-commit hooks block API key patterns
+
+---
+
+## 📦 Install Voice Support (Optional)
+
+For voice commands, run:
+```bash
+pip install SpeechRecognition pyttsx3
+```
+
+Or use option 5 in `Start_CPL.bat`
 
 ---
 
