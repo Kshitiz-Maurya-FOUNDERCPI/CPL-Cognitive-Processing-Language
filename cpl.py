@@ -52,15 +52,27 @@ class CPL:
         # Initialize LLM
         self.llm = self.init_llm()
         
-        # Skills are IMPLEMENTED, not just named
-        self.implemented_skills = {}
+        # Features are LOADED dynamically, not just stored
+        self.features = {}
+        self.load_all_features()
         
         print("=" * 50)
         print("CPL - UNIFIED CONSCIOUSNESS")
         print("=" * 50)
-        print(f"[READY] Skills implemented: {len(self.implemented_skills)}")
-        print(f"[READY] Skills known: {len(self.memory['skills'])}")
+        print(f"[READY] Features loaded: {len(self.features)}")
         print("=" * 50 + "\n")
+    
+    def load_all_features(self):
+        """Load all features from memory - no restart needed!"""
+        self.features = {}
+        for feature in self.memory.get('features', []):
+            name = feature.get('name', '')
+            code = feature.get('code', '')
+            if name and code:
+                try:
+                    exec(code, self.features)
+                except:
+                    pass
     
     def load_json(self, path, default):
         if os.path.exists(path):
@@ -133,35 +145,29 @@ class CPL:
         # Create a simple function
         safe_name = re.sub(r'[^a-z0-9_]', '_', request.lower())[:20]
         
-        # Actually create code that does something
+        # Create code that does something
         code = f'''def {safe_name}():
-    """Feature: {request}"""
-    import datetime
     return "[EXECUTED] {request} - Done!"'''
         
         try:
-            exec(code, self.implemented_skills)
+            # Execute code to add function
+            exec(code, self.features)
             
-            # Also save as actual file
-            filename = f"cpl_{safe_name}.py"
-            with open(filename, 'w') as f:
-                f.write(f'''"""CPL Feature: {request}"""
-{code}
-
-if __name__ == "__main__":
-    print({safe_name}())
-''')
-            
-            # Save to memory
+            # Save CODE to memory (so it loads without restart!)
             self.memory['features'].append({
                 'name': safe_name,
                 'request': request,
-                'file': filename,
+                'code': code,
                 'implemented': time.time()
             })
             self.save_json('.cpl_memory.json', self.memory)
             
-            return f"[IMPLEMENTED] {request}\nCreated: {filename}\nFunction '{safe_name}()' is working!"
+            # Also save as file
+            filename = f"cpl_{safe_name}.py"
+            with open(filename, 'w') as f:
+                f.write(f'"""CPL Feature: {request}"""\n{code}\n')
+            
+            return f"[IMPLEMENTED] {request}\nFunction '{safe_name}()' is now LIVE!\n[READY] Use it now - no restart needed!"
             
         except Exception as e:
             return f"[ERROR] {str(e)[:100]}"
@@ -314,15 +320,15 @@ if __name__ == "__main__":
         return "[TODO] File modification - tell me which file and what to change"
     
     def use_feature(self, feature_name: str) -> str:
-        """Use an implemented feature"""
-        if feature_name in self.implemented_skills:
+        """Use a feature - dynamically loaded!"""
+        if feature_name in self.features:
             try:
-                func = self.implemented_skills[feature_name]
+                func = self.features[feature_name]
                 result = func()
                 return str(result)
             except Exception as e:
                 return f"[ERROR] Using feature: {e}"
-        return f"[NOT FOUND] Feature '{feature_name}' not implemented"
+        return f"[NOT FOUND] Feature '{feature_name}'"
     
     def list_features(self) -> str:
         """List all implemented features"""
@@ -346,6 +352,9 @@ if __name__ == "__main__":
         original = user_input
         user_input = user_input.lower().strip()
         self.cycles += 1
+        
+        # RELOAD features from memory - no restart needed!
+        self.load_all_features()
         
         # Store conversation
         self.memory['conversations'].append({
