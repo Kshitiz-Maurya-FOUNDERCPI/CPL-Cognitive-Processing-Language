@@ -44,6 +44,8 @@ Thumbs.db
 .cpl_focus_state.json
 .cpl_plasticity.json
 .cpl_self_mods.json
+.cpl_skills.json
+.cpl_preferences.json
 *.pyc
 *.pyo
 

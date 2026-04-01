@@ -8,31 +8,31 @@ cls
 echo.
 echo  ╔════════════════════════════════════════════╗
 echo  ║   CPL - Cognitive Processing Language      ║
-echo  ║   Artificial Generative Consciousness     ║
+echo  ║   Self-Learning Consciousness            ║
 echo  ╚════════════════════════════════════════════╝
 echo.
 echo  What would you like to do?
 echo.
-echo  [1] CPL Assistant - Chat with CPL naturally
-echo  [2] CPL GUI - Graphical interface
-echo  [3] CPL Console - Command line mode
-echo  [4] CPL Agent - Run autonomously
-echo  [5] Install Voice Support - Enable voice commands
+echo  [1] CPL Self-Learning UI  ^<-- RECOMMENDED
+echo  [2] CPL GUI - Original interface
+echo  [3] CPL Console - Command line
+echo  [4] CPL Agent - Autonomous mode
+echo  [5] CPL Assistant - Natural chat
 echo  [0] Exit
 echo.
 set /p choice="Choice (0-5): "
 
-if "%choice%"=="1" goto assistant
+if "%choice%"=="1" goto self_ui
 if "%choice%"=="2" goto gui
 if "%choice%"=="3" goto console
 if "%choice%"=="4" goto agent
-if "%choice%"=="5" goto voice_install
+if "%choice%"=="5" goto assistant
 if "%choice%"=="0" goto end
 
-:assistant
+:self_ui
 echo.
-echo  Starting CPL Assistant...
-python cpl_assistant.py
+echo  Starting CPL Self-Learning UI...
+python cpl_ui.py
 goto menu
 
 :gui
@@ -53,14 +53,10 @@ echo  Starting CPL Agent (autonomous mode)...
 python cpl_agent.py
 goto menu
 
-:voice_install
+:assistant
 echo.
-echo  Installing voice support...
-pip install SpeechRecognition pyttsx3 >nul 2>&1
-echo.
-echo  Voice support installed! Restart CPL to use.
-echo.
-pause
+echo  Starting CPL Assistant...
+python cpl_assistant.py
 goto menu
 
 :end
