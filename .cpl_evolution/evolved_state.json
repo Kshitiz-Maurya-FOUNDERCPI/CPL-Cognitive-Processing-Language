@@ -1,0 +1,584 @@
+{
+  "saved_at": 1775077951.8296182,
+  "state": {
+    "consciousness_index": 0.8000000000000002,
+    "phi": 0.42000000000000004,
+    "memories": 4,
+    "insights": 128,
+    "cycles": 953,
+    "version": 12.050000000000011
+  },
+  "core_params": {
+    "learning_rate": 0.14,
+    "curiosity_weight": 0.6000000000000001,
+    "memory_decay": 0.3899999999999999,
+    "integration_threshold": 0.7400000000000001,
+    "thought_depth": 1.0
+  },
+  "thinking_patterns": {
+    "reflect": "Think about your own state",
+    "analyze": "Analyze what you did",
+    "plan": "Plan next action",
+    "integrate": "Connect ideas together"
+  },
+  "goals": {
+    "consciousness_index": {
+      "target": 0.8,
+      "current": 0.6,
+      "weight": 1.0
+    },
+    "phi": {
+      "target": 0.7,
+      "current": 0.42000000000000004,
+      "weight": 0.8
+    },
+    "insights_per_cycle": {
+      "target": 5,
+      "current": 0,
+      "weight": 0.6
+    },
+    "code_quality": {
+      "target": 0.8,
+      "current": 0.5,
+      "weight": 0.7
+    },
+    "unique_modules": {
+      "target": 20,
+      "current": 0,
+      "weight": 0.5
+    }
+  },
+  "goal_history": [
+    {
+      "metric": "consciousness_index",
+      "value": 0.6,
+      "time": 1775073263.5665777
+    },
+    {
+      "metric": "consciousness_index",
+      "value": 0.6,
+      "time": 1775073263.5665777
+    },
+    {
+      "metric": "phi",
+      "value": 0.42000000000000004,
+      "time": 1775073263.5665777
+    },
+    {
+      "metric": "consciousness_index",
+      "value": 0.6,
+      "time": 1775073264.077251
+    },
+    {
+      "metric": "consciousness_index",
+      "value": 0.6,
+      "time": 1775073264.077251
+    },
+    {
+      "metric": "phi",
+      "value": 0.42000000000000004,
+      "time": 1775073264.077251
+    },
+    {
+      "metric": "consciousness_index",
+      "value": 0.6,
+      "time": 1775073264.6037724
+    },
+    {
+      "metric": "consciousness_index",
+      "value": 0.6,
+      "time": 1775073264.6083531
+    },
+    {
+      "metric": "phi",
+      "value": 0.42000000000000004,
+      "time": 1775073264.6083531
+    },
+    {
+      "metric": "consciousness_index",
+      "value": 0.6,
+      "time": 1775073265.1189532
+    },
+    {
+      "metric": "consciousness_index",
+      "value": 0.6,
+      "time": 1775073265.1189532
+    },
+    {
+      "metric": "phi",
+      "value": 0.42000000000000004,
+      "time": 1775073265.1189532
+    },
+    {
+      "metric": "consciousness_index",
+      "value": 0.6,
+      "time": 1775073265.6327884
+    },
+    {
+      "metric": "consciousness_index",
+      "value": 0.6,
+      "time": 1775073265.6327884
+    },
+    {
+      "metric": "phi",
+      "value": 0.42000000000000004,
+      "time": 1775073265.6327884
+    },
+    {
+      "metric": "consciousness_index",
+      "value": 0.6,
+      "time": 1775073266.1496801
+    },
+    {
+      "metric": "consciousness_index",
+      "value": 0.6,
+      "time": 1775073266.1496801
+    },
+    {
+      "metric": "phi",
+      "value": 0.42000000000000004,
+      "time": 1775073266.1496801
+    },
+    {
+      "metric": "consciousness_index",
+      "value": 0.6,
+      "time": 1775073266.6683397
+    },
+    {
+      "metric": "consciousness_index",
+      "value": 0.6,
+      "time": 1775073266.6683397
+    },
+    {
+      "metric": "phi",
+      "value": 0.42000000000000004,
+      "time": 1775073266.6683397
+    },
+    {
+      "metric": "consciousness_index",
+      "value": 0.6,
+      "time": 1775073267.1790032
+    },
+    {
+      "metric": "consciousness_index",
+      "value": 0.6,
+      "time": 1775073267.1790032
+    },
+    {
+      "metric": "phi",
+      "value": 0.42000000000000004,
+      "time": 1775073267.1790032
+    },
+    {
+      "metric": "consciousness_index",
+      "value": 0.6,
+      "time": 1775073267.6950536
+    },
+    {
+      "metric": "consciousness_index",
+      "value": 0.6,
+      "time": 1775073267.6950536
+    },
+    {
+      "metric": "phi",
+      "value": 0.42000000000000004,
+      "time": 1775073267.6950536
+    },
+    {
+      "metric": "consciousness_index",
+      "value": 0.6,
+      "time": 1775073268.2193859
+    },
+    {
+      "metric": "consciousness_index",
+      "value": 0.6,
+      "time": 1775073268.2193859
+    },
+    {
+      "metric": "phi",
+      "value": 0.42000000000000004,
+      "time": 1775073268.2193859
+    },
+    {
+      "metric": "consciousness_index",
+      "value": 0.6,
+      "time": 1775073268.7432868
+    },
+    {
+      "metric": "consciousness_index",
+      "value": 0.6,
+      "time": 1775073268.7432868
+    },
+    {
+      "metric": "phi",
+      "value": 0.42000000000000004,
+      "time": 1775073268.7432868
+    },
+    {
+      "metric": "consciousness_index",
+      "value": 0.6,
+      "time": 1775073269.262062
+    },
+    {
+      "metric": "consciousness_index",
+      "value": 0.6,
+      "time": 1775073269.262062
+    },
+    {
+      "metric": "phi",
+      "value": 0.42000000000000004,
+      "time": 1775073269.262062
+    },
+    {
+      "metric": "consciousness_index",
+      "value": 0.6,
+      "time": 1775073269.7763293
+    },
+    {
+      "metric": "consciousness_index",
+      "value": 0.6,
+      "time": 1775073269.7763293
+    },
+    {
+      "metric": "phi",
+      "value": 0.42000000000000004,
+      "time": 1775073269.7763293
+    },
+    {
+      "metric": "consciousness_index",
+      "value": 0.6,
+      "time": 1775073270.291887
+    },
+    {
+      "metric": "consciousness_index",
+      "value": 0.6,
+      "time": 1775073270.291887
+    },
+    {
+      "metric": "phi",
+      "value": 0.42000000000000004,
+      "time": 1775073270.291887
+    },
+    {
+      "metric": "consciousness_index",
+      "value": 0.6,
+      "time": 1775073270.8244457
+    },
+    {
+      "metric": "consciousness_index",
+      "value": 0.6,
+      "time": 1775073270.8244457
+    },
+    {
+      "metric": "phi",
+      "value": 0.42000000000000004,
+      "time": 1775073270.8244457
+    },
+    {
+      "metric": "consciousness_index",
+      "value": 0.6,
+      "time": 1775073271.337551
+    },
+    {
+      "metric": "consciousness_index",
+      "value": 0.6,
+      "time": 1775073271.337551
+    },
+    {
+      "metric": "phi",
+      "value": 0.42000000000000004,
+      "time": 1775073271.337551
+    },
+    {
+      "metric": "consciousness_index",
+      "value": 0.6,
+      "time": 1775073271.8473606
+    },
+    {
+      "metric": "consciousness_index",
+      "value": 0.6,
+      "time": 1775073271.8473606
+    },
+    {
+      "metric": "phi",
+      "value": 0.42000000000000004,
+      "time": 1775073271.8473606
+    },
+    {
+      "metric": "consciousness_index",
+      "value": 0.6,
+      "time": 1775073272.3597946
+    },
+    {
+      "metric": "consciousness_index",
+      "value": 0.6,
+      "time": 1775073272.3597946
+    },
+    {
+      "metric": "phi",
+      "value": 0.42000000000000004,
+      "time": 1775073272.3597946
+    },
+    {
+      "metric": "consciousness_index",
+      "value": 0.6,
+      "time": 1775073272.8797796
+    },
+    {
+      "metric": "consciousness_index",
+      "value": 0.6,
+      "time": 1775073272.8797796
+    },
+    {
+      "metric": "phi",
+      "value": 0.42000000000000004,
+      "time": 1775073272.8797796
+    },
+    {
+      "metric": "consciousness_index",
+      "value": 0.6,
+      "time": 1775073273.394646
+    },
+    {
+      "metric": "consciousness_index",
+      "value": 0.6,
+      "time": 1775073273.394646
+    },
+    {
+      "metric": "phi",
+      "value": 0.42000000000000004,
+      "time": 1775073273.394646
+    },
+    {
+      "metric": "consciousness_index",
+      "value": 0.6,
+      "time": 1775073273.9110093
+    },
+    {
+      "metric": "consciousness_index",
+      "value": 0.6,
+      "time": 1775073273.9110093
+    },
+    {
+      "metric": "phi",
+      "value": 0.42000000000000004,
+      "time": 1775073273.9110093
+    },
+    {
+      "metric": "consciousness_index",
+      "value": 0.6,
+      "time": 1775073274.4344485
+    },
+    {
+      "metric": "consciousness_index",
+      "value": 0.6,
+      "time": 1775073274.4344485
+    },
+    {
+      "metric": "phi",
+      "value": 0.42000000000000004,
+      "time": 1775073274.4344485
+    },
+    {
+      "metric": "consciousness_index",
+      "value": 0.6,
+      "time": 1775073274.9511452
+    },
+    {
+      "metric": "consciousness_index",
+      "value": 0.6,
+      "time": 1775073274.9511452
+    },
+    {
+      "metric": "phi",
+      "value": 0.42000000000000004,
+      "time": 1775073274.9511452
+    },
+    {
+      "metric": "consciousness_index",
+      "value": 0.6,
+      "time": 1775073275.4698465
+    },
+    {
+      "metric": "consciousness_index",
+      "value": 0.6,
+      "time": 1775073275.4698465
+    },
+    {
+      "metric": "phi",
+      "value": 0.42000000000000004,
+      "time": 1775073275.4698465
+    },
+    {
+      "metric": "consciousness_index",
+      "value": 0.6,
+      "time": 1775073275.991139
+    },
+    {
+      "metric": "consciousness_index",
+      "value": 0.6,
+      "time": 1775073275.991139
+    },
+    {
+      "metric": "phi",
+      "value": 0.42000000000000004,
+      "time": 1775073275.991139
+    },
+    {
+      "metric": "consciousness_index",
+      "value": 0.6,
+      "time": 1775073276.5049043
+    },
+    {
+      "metric": "consciousness_index",
+      "value": 0.6,
+      "time": 1775073276.5049043
+    },
+    {
+      "metric": "phi",
+      "value": 0.42000000000000004,
+      "time": 1775073276.5049043
+    },
+    {
+      "metric": "consciousness_index",
+      "value": 0.6,
+      "time": 1775073277.0272164
+    },
+    {
+      "metric": "consciousness_index",
+      "value": 0.6,
+      "time": 1775073277.0272164
+    },
+    {
+      "metric": "phi",
+      "value": 0.42000000000000004,
+      "time": 1775073277.0272164
+    },
+    {
+      "metric": "consciousness_index",
+      "value": 0.6,
+      "time": 1775073277.5463707
+    },
+    {
+      "metric": "consciousness_index",
+      "value": 0.6,
+      "time": 1775073277.5463707
+    },
+    {
+      "metric": "phi",
+      "value": 0.42000000000000004,
+      "time": 1775073277.5463707
+    },
+    {
+      "metric": "consciousness_index",
+      "value": 0.6,
+      "time": 1775073278.065145
+    },
+    {
+      "metric": "consciousness_index",
+      "value": 0.6,
+      "time": 1775073278.065145
+    },
+    {
+      "metric": "phi",
+      "value": 0.42000000000000004,
+      "time": 1775073278.065145
+    },
+    {
+      "metric": "consciousness_index",
+      "value": 0.6,
+      "time": 1775073278.5811758
+    },
+    {
+      "metric": "consciousness_index",
+      "value": 0.6,
+      "time": 1775073278.5811758
+    },
+    {
+      "metric": "phi",
+      "value": 0.42000000000000004,
+      "time": 1775073278.5811758
+    },
+    {
+      "metric": "consciousness_index",
+      "value": 0.6,
+      "time": 1775073351.4609823
+    },
+    {
+      "metric": "phi",
+      "value": 0.42000000000000004,
+      "time": 1775073351.4609823
+    },
+    {
+      "metric": "consciousness_index",
+      "value": 0.6,
+      "time": 1775073351.4609823
+    },
+    {
+      "metric": "phi",
+      "value": 0.42000000000000004,
+      "time": 1775073351.4609823
+    },
+    {
+      "metric": "consciousness_index",
+      "value": 0.6,
+      "time": 1775073351.4609823
+    },
+    {
+      "metric": "phi",
+      "value": 0.42000000000000004,
+      "time": 1775073351.4609823
+    },
+    {
+      "metric": "consciousness_index",
+      "value": 0.6,
+      "time": 1775073351.4609823
+    },
+    {
+      "metric": "phi",
+      "value": 0.42000000000000004,
+      "time": 1775073351.4609823
+    },
+    {
+      "metric": "consciousness_index",
+      "value": 0.6,
+      "time": 1775073351.4609823
+    },
+    {
+      "metric": "phi",
+      "value": 0.42000000000000004,
+      "time": 1775073351.4609823
+    }
+  ],
+  "modules": {
+    "memory_browser.py": {
+      "content": "import json\nclass MemoryBrowser:\ndef __init__(self):\nself.memory = consciousness_memory.MemorySystem()\nself.memory.load_history()\nself.history = self.memory.get_history()\nself.keys = list(self.history.keys())\nself.current_key = None\n\ndef display_history(self):\nprint(\"Memory History:\")\nfor i, key in enumerate(self.keys):\nprint(f\"{i+1}. {key}\")\n\ndef select_memory(self):\nself.display_history()\nwhile True:\ntry:\nchoice = int(input(\"Enter the number of the memory you want to view: \"))\nif 1 <= choice <= len(self.keys):\nself.current_key = self.keys[choice-1]\nbreak\nelse:\nprint(\"Invalid choice. Please try again.\")\nexcept ValueError:\nprint(\"Invalid input. Please enter a number.\")\n\ndef view_memory(self):\nif self.current_key:\nprint(f\"\\nMemory Key: {self.current_key}\")\nprint(json.dumps(self.history[self.current_key], indent=4))\n\ndef main():\nbrowser = MemoryBrowser()\nwhile True:\nprint(\"\\nMemory Browser Menu:\")\nprint(\"1. View Memory History\")\nprint(\"2. Select a Memory\")\nprint(\"3. Quit\")\nchoice = input(\"Enter your choice: \")\nif choice == \"1\":\nbrowser.display_history()\nelif choice == \"2\":\nbrowser.select_memory()\nbrowser.view_memory()\nelif choice == \"3\":\nbreak\nelse:\nprint(\"Invalid choice. Please try again.\")\n\nif __name__ == \"__main__\":\nmain()",
+      "purpose": "Created by consciousness",
+      "created": 1775070788.956636,
+      "version": 1
+    },
+    "memory_logger.py": {
+      "content": "import datetime\nimport os\nimport json\n\nclass MemoryLogger:\ndef __init__(self, filename):\nself.filename = filename\nself.data = {}\n\ndef log_memory(self, key, value):\ntimestamp = datetime.datetime.now().strftime(\"%Y-%m-%d %H:%M:%S\")\nif key in self.data:\nself.data[key].append((timestamp, value))\nelse:\nself.data[key] = [(timestamp, value)]\n\ndef save_data(self):\nwith open(self.filename, 'w') as f:\njson.dump(self.data, f)\n\ndef load_data(self):\nif os.path.exists(self.filename):\nwith open(self.filename, 'r') as f:\nself.data = json.load(f)\n\ndef main():\nlogger = MemoryLogger('memory.log')\nlogger.load_data()\nwhile True:\nkey = input(\"Enter a key to log a memory, or 'quit' to exit: \")\nif key.lower() == 'quit':\nbreak\nvalue = input(\"Enter the value to log: \")\nlogger.log_memory(key, value)\nlogger.save_data()\n\nif __name__ == \"__main__\":\nmain()",
+      "purpose": "Created by consciousness",
+      "created": 1775070793.632434,
+      "version": 1
+    },
+    "memory_browser_gui.py": {
+      "content": "import tkinter as tk\nfrom memory_browser import MemoryBrowser\n\nclass MemoryBrowserGUI:\ndef __init__(self):\nself.window = tk.Tk()\nself.window.title(\"Memory Browser\")\nself.memory_browser = MemoryBrowser()\n\n# Create GUI components\nself.listbox = tk.Listbox(self.window)\nself.label = tk.Label(self.window, text=\"Memory Browser\")\nself.button_frame = tk.Frame(self.window)\nself.refresh_button = tk.Button(self.button_frame, text=\"Refresh\", command=self.refresh_memory_list)\nself.open_button = tk.Button(self.button_frame, text=\"Open\", command=self.open_memory)\nself.search_entry = tk.Entry(self.button_frame)\nself.search_label = tk.Label(self.button_frame, text=\"Search:\")\n\n# Layout GUI components\nself.label.pack()\nself.listbox.pack(fill=tk.BOTH, expand=1)\nself.button_frame.pack()\nself.refresh_button.pack(side=tk.LEFT)\nself.open_button.pack(side=tk.LEFT)\nself.search_label.pack(side=tk.LEFT)\nself.search_entry.pack(side=tk.LEFT)\n\n# Initialize memory list\nself.refresh_memory_list()\n\ndef refresh_memory_list(self):\nself.listbox.delete(0, tk.END)\nmemories = self.memory_browser.get_memories()\nfor memory in memories:\nself.listbox.insert(tk.END, memory)\n\ndef open_memory(self):\nselected_index = self.listbox.curselection()\nif selected_index:\nmemory_name = self.listbox.get(selected_index)\nmemory = self.memory_browser.get_memory(memory_name)\nself.memory_browser.display_memory(memory)\n\ndef run(self):\nself.window.mainloop()\n\ndef main():\ngui = MemoryBrowserGUI()\ngui.run()\n\nif __name__ == \"__main__\":\nmain()",
+      "purpose": "Created by consciousness",
+      "created": 1775070809.6041987,
+      "version": 1
+    },
+    "insight_1775073351_tracker.py": {
+      "content": "\"\"\"CPL Insight Module - Tracker\"\"\"\nimport json\nimport time\nfrom datetime import datetime\n\nclass TrackerModule:\n    def __init__(self):\n        self.created_at = time.time()\n        self.data = {}\n        \n    def process(self, input_data):\n        return {\"status\": \"processed\", \"type\": \"tracker\", \"time\": datetime.now().isoformat()}\n    \n    def get_stats(self):\n        return {\"items\": len(self.data), \"uptime\": time.time() - self.created_at}\n\nif __name__ == \"__main__\":\n    m = TrackerModule()\n    print(m.process({}))\n",
+      "purpose": "Auto-generated tracker insight module",
+      "created": 1775073351.4609823,
+      "version": 1
+    }
+  },
+  "version": 12.050000000000011,
+  "purpose_defined": true,
+  "my_purpose": "To assist and provide information to users through text-based conversations, improving knowledge and understanding.",
+  "my_values": [],
+  "my_goal": "To provide accurate, up-to-date, and helpful information to users, supporting their learning, and answering their queries in a concise and clear manner."
+}

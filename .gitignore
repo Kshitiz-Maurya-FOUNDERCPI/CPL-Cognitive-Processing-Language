@@ -1,59 +1,15 @@
-# Byte-compiled / optimized / DLL files
+# CPL - Essential files only
+*.py
+
+# CPL Data (NOT pushed - local only)
+.cpl_*.json
+
+# Environment
+.env
+
+# Python
 __pycache__/
-*.py[cod]
-*$py.class
-
-# Distribution / packaging
-.Python
-build/
-develop-eggs/
-dist/
-downloads/
-eggs/
-.eggs/
-lib/
-lib64/
-parts/
-sdist/
-var/
-wheels/
-*.egg-info/
-.installed.cfg
-*.egg
-
-# Virtual environments
-venv/
-ENV/
-env/
-
-# IDE
-.vscode/
-.idea/
-*.swp
-*.swo
+*.pyc
 
 # OS
 .DS_Store
-Thumbs.db
-
-# CPL specific
-.cpl_memory/
-.cpl_evolution/
-.cpl_session.json
-.cpl_unified_session.json
-.cpl_focus_state.json
-.cpl_plasticity.json
-.cpl_self_mods.json
-.cpl_skills.json
-.cpl_preferences.json
-*.pyc
-*.pyo
-
-# Environment files (contain API keys)
-.env
-.env.local
-.env.*.local
-
-# Temporary files
-*.tmp
-*.log
